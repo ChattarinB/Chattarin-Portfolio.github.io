@@ -40,10 +40,11 @@ nav {
     position: fixed;
 }
 nav ul {
-    position: relative;
-    margin: auto;
-    left: 38%;
+    position: fixed;
+    top: 25px;
+    right: 0;
 }
+
 nav li {
     list-style: none;
     display: inline-block;
@@ -67,8 +68,6 @@ nav a {
 }
 #about p {
     text-align: justify;
-    margin: auto;
-    width: 75%;
     height: 90%;
 }
 #profilePic {    
@@ -81,7 +80,7 @@ nav a {
 }
 #projects {
     background-color: var(--comp-color4);
-    padding: 100px;
+    padding: 100px 0;
     height: 100%;
     width: 100%;
     color: var(--comp-color1);
@@ -102,8 +101,8 @@ nav a {
 }
 .projectDes {
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 30px;
+    padding: 5px 0 30px 0;
+    min-width: 320px;
 }
 #contact {
     background-color: var(--main-color);
@@ -117,4 +116,51 @@ nav a {
     margin: 30px;
     font-size: 24px;
     color: var(--comp-color2);
+}
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.75em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1.25em;
+    }
+    i {
+        font-size: 1.25em;
+    }
+    nav ul {
+        right: -1rem;
+    }
+    #about {
+        padding: 100px 0;
+    }
+    #about p {
+        text-align: left;
+        margin: auto;
+        width: 90%;
+        height: 90%;
+    }
+}
+@media screen and (max-width:375px) {
+    nav {
+        min-width: 320px;
+    }
+    ul {
+        min-width: 320px;
+    }
+    nav a {
+        font-size: 1.25em;
+    }
+    section {
+        min-width: 320px;
+    }
+    .projectPic {
+        width: 100%;
+        height: auto;
+    }
 }
