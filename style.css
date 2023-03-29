@@ -10,6 +10,15 @@
     --comp-color3: #802626;
     --comp-color4: #CC0000;
 }
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 32px;
+}
+p {
+    font-size: 28px;
+}
 nav {
     display: flex;
     flex-direction: column;
@@ -42,13 +51,11 @@ nav a {
 }
 #about h1 {    
     text-align: center;
-    font-size: 36px;
     padding-top: 30px;
 }
 #about p {
     text-align: justify;
     margin: auto;
-    font-size: 28px;
     width: 75%;
     height: 90%;
 }
@@ -59,4 +66,34 @@ nav a {
     border-radius: 50% 50%;
     margin: 20px auto;
     object-fit: cover;    
+}
+#projects {
+    background-color: var(--comp-color3);
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+}
+#projects h2 {
+    text-align: center;
+    padding: 30px 0;
+    color: var(--comp-color1);
+}
+#projects p {
+    color: var(--comp-color1);
+    
+}
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.projectPic {
+    object-fit: fill;
+    max-height: 320px;
+    width: 350px;
+}
+.projectDes {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
 }
