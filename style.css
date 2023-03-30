@@ -5,11 +5,11 @@
     font-size: 16px;
 }
 :root {
-    --main-color: #FF0000;
-    --comp-color1: #FF4D4D;
-    --comp-color2: #800000;
+    --main-color: #151A1C;
+    --comp-color1: #4E6169;
+    --comp-color2: #88A8B5;
     --comp-color3: #802626;
-    --comp-color4: #CC0000;
+    --comp-color4: #182D36;
 }
 h1 {
     font-size: 3em;
