@@ -5,11 +5,11 @@
     font-size: 16px;
 }
 :root {
-    --main-color: #FF0000;
-    --comp-color1: #FF4D4D;
-    --comp-color2: #800000;
-    --comp-color3: #802626;
-    --comp-color4: #CC0000;
+    --background-color1: #332424;
+    --background-color2: #4D4D4D;
+    --font-color1: #999999;
+    --font-color2: #000000;
+    --side-color: #CC0000;
 }
 h1 {
     font-size: 3em;
@@ -36,7 +36,7 @@ nav {
     flex-direction: column;
     height: 100px;
     width: 100%;
-    background-color: var(--comp-color2);
+    background-color: var(--side-color);
     position: fixed;
 }
 nav ul {
@@ -57,10 +57,10 @@ nav a {
 }
 #about {
     padding: 100px;    
-    background-color: var(--main-color);
+    background-color: var(--background-color1);
     height: 100%;
     width: 100%;
-    color: var(--comp-color2);
+    color: var(--font-color1);
 }
 #about h1 {    
     text-align: center;
@@ -79,11 +79,11 @@ nav a {
     object-fit: cover;    
 }
 #projects {
-    background-color: var(--comp-color4);
+    background-color: var(--background-color2);
     padding: 100px 0;
     height: 100%;
     width: 100%;
-    color: var(--comp-color1);
+    color: var(--font-color2);
 }
 #projects h2 {
     text-align: center;
@@ -105,8 +105,8 @@ nav a {
     min-width: 320px;
 }
 #contact {
-    background-color: var(--main-color);
-    color: var(--comp-color2);
+    background-color: var(--background-color1);
+    color: var(--font-color1);
     height: 100%;
     width: 100%;
     text-align: center;
@@ -115,7 +115,7 @@ nav a {
 #contact a {
     margin: 30px;
     font-size: 24px;
-    color: var(--comp-color2);
+    color: var(--font-color1);
 }
 @media screen and (max-width: 425px) {
     h1 {
